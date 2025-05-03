@@ -2,22 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Webpage</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <div class="container">
-    <img src="profile.jpg" alt="My Photo" class="profile-pic">
-    <h1 id="name">Hello, I'm [Your Name]</h1>
-    <p id="intro">Welcome to my first webpage! I'm learning frontend development.</p>
-    <button onclick="changeGreeting()">Click to Change Greeting</button>
+<body class="bg-white font-sans">
+  <!-- Notification Banner -->
+  <div class="bg-green-500 text-white px-4 py-2 text-center">
+    Details saved - Account activated Successfully
+  </div>
 
-    <div class="links">
-      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+  <!-- Welcome Section -->
+  <div class="p-4 text-center bg-blue-100">
+    <h1 class="text-xl font-bold">Account activated Successfully</h1>
+    <div class="flex justify-center mt-4 space-x-4">
+      <img src="https://via.placeholder.com/150x100" alt="Promo 1" class="rounded shadow">
+      <img src="https://via.placeholder.com/150x100" alt="Promo 2" class="rounded shadow">
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <!-- Stats Cards -->
+  <div class="mt-6 space-y-4 px-4">
+    <div class="bg-gradient-to-r from-purple-500 to-blue-400 text-white p-6 rounded-xl shadow-md text-center">
+      <div class="text-2xl font-semibold">TOTAL SALES</div>
+      <div class="text-lg">KES 0</div>
+    </div>
+
+    <div class="bg-gradient-to-r from-pink-400 to-red-400 text-white p-6 rounded-xl shadow-md text-center">
+      <div class="text-2xl font-semibold">CASH OUT</div>
+      <div class="text-lg">KES 0</div>
+    </div>
+
+    <div class="bg-gradient-to-r from-orange-400 to-yellow-400 text-white p-6 rounded-xl shadow-md text-center">
+      <div class="text-2xl font-semibold">INVOICES</div>
+      <div class="text-lg">0</div>
+    </div>
+  </div>
 </body>
 </html>
